@@ -8,4 +8,4 @@ NSTIC-funded U2F project at the School District of Janesville
 
 ## Shibboleth IdP Installation
 
-* Following [HowTo Guide](https://github.com/malavolti) from the Italian Identity Federation for installation on sdj-nstic ubuntu 14.04
+* Following [HowTo Guide](https://github.com/malavolti) from the Italian Identity Federation for installation on sdj-nstic with ubuntu 14.04.
