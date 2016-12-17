@@ -10,4 +10,4 @@ Project Lead: [Yubico](http://yubico.com)
 
 ## Shibboleth IdP Installation
 
-* Following [HowTo Guide](https://github.com/malavolti) from the Italian Identity Federation for installation on sdj-nstic with ubuntu 14.04.
+* Following [HowTo Guide](https://github.com/malavolti) from the Italian Identity Federation for installation on sdj-nstic running ubuntu 14.04.
