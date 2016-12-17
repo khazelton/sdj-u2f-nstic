@@ -1,5 +1,7 @@
 # sdj-u2f-nstic
-NSTIC-funded U2F project at the School District of Janesville with project leadership from Yubico
+NSTIC-funded U2F project at the School District of Janesville
+
+Project Lead: [Yubico](http://yubico.com)
 #
 ## Table of Contents
 
