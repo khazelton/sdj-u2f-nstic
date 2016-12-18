@@ -15,7 +15,7 @@ Project Lead: [Yubico](http://yubico.com)
 * Generate a Self-Signed Certificate 
 ** per https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
 ** and move to /tmp
-
+```
 openssl req -newkey rsa:2048 -nodes -keyout jvu2f.key -x509 -days 3659 -out jvu2f.crt
 chmod 600 jvu2f.key
 mv jv* /tmp
@@ -81,4 +81,4 @@ Certificate:
          a3:1d:12:43:8d:a1:95:20:85:80:e1:96:52:bb:a2:60:b0:89:
          54:e9:c1:47
 root@test-cache:/home/khazelton# 
-
+```
