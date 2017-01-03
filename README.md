@@ -94,6 +94,9 @@ root@test-cache:/home/khazelton#
 
 #### 15 Move the HTTPS Certificate and Key to a new directory /opt/tomcat/ssl
 #### 16 Install the Tomcat Native:
-* NOTE: Find Tomcat Native at https://archive.apache.org/dist/tomcat/tomcat-connectors/native/1.2.5/source/
-
+* NOTE: Find Tomcat Native at https://archive.apache.org/dist/tomcat/tomcat-connectors/native/1.2.5/source/tomcat-native-1.2.5-src.tar.gz
+* /usr/local/src/tomcat-native-1.2.5-src
+* NOTE: ant fails: BUILD FAILED
+/usr/local/src/tomcat-native-1.2.5-src/build.xml:93: Directory /usr/local/src/tomcat-native-1.2.5-src/dist creation was not successful for an unknown reason
+ 
 
