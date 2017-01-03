@@ -92,4 +92,8 @@ root@test-cache:/home/khazelton#
 
 * http://jvu2f:8080 shows the Tomcat 8 Home Page
 
+#### 15 Move the HTTPS Certificate and Key to a new directory /opt/tomcat/ssl
+#### 16 Install the Tomcat Native:
+* NOTE: Find Tomcat Native at https://archive.apache.org/dist/tomcat/tomcat-connectors/native/1.2.5/source/
+
 
