@@ -85,5 +85,10 @@ root@test-cache:/home/khazelton#
 #### 10 Install apache portable runtime (APR)
 #### 11 Install Tomcat 8
 * NOTE: error in url for daemon-tomcat; should be https://github.com/malavolti/HOWTO-Install-and-Configure-Shibboleth-Identity-Provider/blob/master/daemon-tomcat 
+#### 12 Create the init.d service for restarting Tomcat 8
+#### 13 Ensure that your firewall/firewalls are not blocking the traffic on the port 443 and 8080
+#### 14 Open the Tomcat 8 Home Page:
+
+* http://jvu2f:8080 shows the Tomcat 8 Home Page
 
 
