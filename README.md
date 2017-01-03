@@ -84,3 +84,7 @@ root@test-cache:/home/khazelton#
 ```
 #### 10 Install apache portable runtime (APR)
 #### 11 Install Tomcat 8
+NOTE: error in url for daemon-tomcat; should be
+https://github.com/malavolti/HOWTO-Install-and-Configure-Shibboleth-Identity-Provider/blob/master/daemon-tomcat 
+
+
