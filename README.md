@@ -82,4 +82,5 @@ Certificate:
          54:e9:c1:47
 root@test-cache:/home/khazelton# 
 ```
-#### 10 install apache portable runtime (APR)
+#### 10 Install apache portable runtime (APR)
+#### 11 Install Tomcat 8
