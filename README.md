@@ -99,4 +99,5 @@ root@test-cache:/home/khazelton#
 * NOTE: ant fails: BUILD FAILED
 /usr/local/src/tomcat-native-1.2.5-src/build.xml:93: Directory /usr/local/src/tomcat-native-1.2.5-src/dist creation was not successful for an unknown reason
  
-
+## Shibboleth IdP -- Active Directory Integration
+* See detailed instructions on the Shibboleth wiki, at https://wiki.shibboleth.net/confluence/display/IDP30/LDAPAuthnConfiguration 
