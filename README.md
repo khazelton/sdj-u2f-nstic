@@ -94,9 +94,10 @@ root@test-cache:/home/khazelton#
 
 #### 15 Move the HTTPS Certificate and Key to a new directory /opt/tomcat/ssl
 #### 16 Install the Tomcat Native:
-* NOTE: Find latest Tomcat Native at https://archive.apache.org/dist/tomcat/tomcat-connectors/native/1.0.2j/source/tomcat-native-1.0.2j-src.tar.gz
-* /usr/local/src/tomcat-native-1.0.2j-src/native
-* ./configure --with
+* NOTE: Find latest Tomcat Native at https://archive.apache.org/dist/tomcat/tomcat-connectors/native/1.2.10/source/tomcat-native-1.2.10-src.tar.gz
+* /usr/local/src/tomcat-native-1.2.10-src/native
+* ./configure --with-apr=/usr/local/apr --with-java-home=/usr/lib/jvm/java-8-oracle --with-ssl=yes --prefix=/opt/tomcat --with-ssl=/????
+
 
  
 ## Shibboleth IdP -- Active Directory Integration
