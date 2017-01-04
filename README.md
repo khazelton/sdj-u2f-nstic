@@ -98,7 +98,9 @@ root@test-cache:/home/khazelton#
 * /usr/local/src/tomcat-native-1.2.10-src/native
 * ./configure --with-apr=/usr/local/apr --with-java-home=/usr/lib/jvm/java-8-oracle --with-ssl=yes --prefix=/opt/tomcat --with-ssl=/????
 
+tar -xzvf openssl-1.0.2j.tar.gz...
 
+ls -la /opt/openssl-1.0.2j
  
 ## Shibboleth IdP -- Active Directory Integration
 * See detailed instructions on the Shibboleth wiki, at https://wiki.shibboleth.net/confluence/display/IDP30/LDAPAuthnConfiguration 
