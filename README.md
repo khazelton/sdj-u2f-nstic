@@ -100,7 +100,19 @@ root@test-cache:/home/khazelton#
 
 tar -xzvf openssl-1.0.2j.tar.gz...
 
-ls -la /opt/openssl-1.0.2j
+INSTALL openssl 1.0.2j per /opt/openssl-1.0.2j/INSTALL
+
+  $ ./config
+  $ make
+  $ make test
+  $ make install
+  
+  /usr/local/ssl/bin/openssl version
+  OpenSSL 1.0.2j  26 Sep 2016
+
+
+
+
  
 ## Shibboleth IdP -- Active Directory Integration
 * See detailed instructions on the Shibboleth wiki, at https://wiki.shibboleth.net/confluence/display/IDP30/LDAPAuthnConfiguration 
