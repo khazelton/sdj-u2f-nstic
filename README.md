@@ -93,7 +93,7 @@ root@test-cache:/home/khazelton#
 * http://jvu2f:8080 shows the Tomcat 8 Home Page
 
 #### 15 Move the HTTPS Certificate and Key to a new directory /opt/tomcat/ssl
-#### 16 Install the Tomcat Native:
+#### 16 Deprecated Approach: Install the Tomcat Native:
 * NOTE: Find latest Tomcat Native at https://archive.apache.org/dist/tomcat/tomcat-connectors/native/1.2.10/source/tomcat-native-1.2.10-src.tar.gz
 * /usr/local/src/tomcat-native-1.2.10-src/native
 * ./configure --with-apr=/usr/local/apr --with-java-home=/usr/lib/jvm/java-8-oracle --with-ssl=yes --prefix=/opt/tomcat --with-ssl=/????
@@ -109,10 +109,80 @@ INSTALL openssl 1.0.2j per /opt/openssl-1.0.2j/INSTALL
   
   /usr/local/ssl/bin/openssl version
   OpenSSL 1.0.2j  26 Sep 2016
+  
+point /usr/bin/openssl at /usr/local/ssl/bin/openssl
+
+root@test-cache:/etc/alternatives# ls -la /usr/bin/openssl
+-rwxr-xr-x 1 root root 513280 Sep 23 07:23 /usr/bin/openssl
+root@test-cache:/etc/alternatives# openssl version
+OpenSSL 1.0.1f 6 Jan 2014
+root@test-cache:/etc/alternatives# mv /usr/bin/openssl /usr/bin/opensslV1.0.1f
+root@test-cache:/etc/alternatives# ln -s /usr/local/ssl/bin/openssl /usr/bin/openssl
+
+root@test-cache:/etc/alternatives# which openssl
+/usr/bin/openssl
+root@test-cache:/etc/alternatives# openssl version
+OpenSSL 1.0.2j  26 Sep 2016
+root@test-cache:/etc/alternatives# root
 
 
 
 
+Deprecated Approach: Install Tomcat Native
+
+cd /usr/local/src/tomcat-native-1.2.10-src/native
+./configure --with-apr=/usr/local/apr --with-java-home=/usr/lib/jvm/java-8-oracle --with-ssl=yes --prefix=/opt/tomcat
  
+#### 1a  Install Shib IdP 3.2.1 with Jetty
+
+...
+root@test-cache:/opt/jetty-distribution-9.3.15.v20161220# cat webapps/idp.xml
+
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+  <Set name="war"><SystemProperty name="idp.home"/>/war/idp.war</Set>
+  <Set name="contextPath">/idp</Set>
+  <Set name="extractWAR">false</Set>
+  <Set name="copyWebDir">false</Set>
+  <Set name="copyWebInf">true</Set>
+</Configure>
+root@test-cache:/opt/jetty-distribution-9.3.15.v20161220# pwd
+/opt/jetty-distribution-9.3.15.v20161220
+root@test-cache:/opt/jetty-distribution-9.3.15.v20161220# cd /opt/shibboleth-identity-provider-3.2.1
+root@test-cache:/opt/shibboleth-identity-provider-3.2.1# ./bin/install.sh
+Source (Distribution) Directory: [/opt/shibboleth-identity-provider-3.2.1]
+
+Installation Directory: [/opt/shibboleth-idp]
+
+Hostname: [sdj-nstic.janesville.k12.wi.us]
+
+SAML EntityID: [https://sdj-nstic.janesville.k12.wi.us/idp/shibboleth]
+
+Attribute Scope: [janesville.k12.wi.us]
+
+Backchannel PKCS12 Password: 
+Password cannot be zero length
+Backchannel PKCS12 Password: 
+Re-enter password: 
+Cookie Encryption Key Password: 
+Re-enter password: 
+Warning: /opt/shibboleth-idp/bin does not exist.
+Warning: /opt/shibboleth-idp/dist does not exist.
+Warning: /opt/shibboleth-idp/doc does not exist.
+Warning: /opt/shibboleth-idp/system does not exist.
+Warning: /opt/shibboleth-idp/webapp does not exist.
+Generating Signing Key, CN = sdj-nstic.janesville.k12.wi.us URI = https://sdj-nstic.janesville.k12.wi.us/idp/shibboleth ...
+...done
+Creating Encryption Key, CN = sdj-nstic.janesville.k12.wi.us URI = https://sdj-nstic.janesville.k12.wi.us/idp/shibboleth ...
+...done
+Creating Backchannel keystore, CN = sdj-nstic.janesville.k12.wi.us URI = https://sdj-nstic.janesville.k12.wi.us/idp/shibboleth ...
+...done
+Creating cookie encryption key files...
+...done
+Rebuilding /opt/shibboleth-idp/war/idp.war ...
+...done
+
+BUILD SUCCESSFUL
+Total time: 2 min
+
 ## Shibboleth IdP -- Active Directory Integration
 * See detailed instructions on the Shibboleth wiki, at https://wiki.shibboleth.net/confluence/display/IDP30/LDAPAuthnConfiguration 
