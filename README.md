@@ -133,7 +133,7 @@ Deprecated Approach: Install Tomcat Native
 cd /usr/local/src/tomcat-native-1.2.10-src/native
 ./configure --with-apr=/usr/local/apr --with-java-home=/usr/lib/jvm/java-8-oracle --with-ssl=yes --prefix=/opt/tomcat
  
-#### 1a  Install Shib IdP 3.2.1 with Jetty
+#### 16a  Install Shib IdP 3.2.1 with Jetty
 
 ...
 root@test-cache:/opt/jetty-distribution-9.3.15.v20161220# cat webapps/idp.xml
