@@ -133,7 +133,7 @@ Deprecated Approach: Install Tomcat Native
 cd /usr/local/src/tomcat-native-1.2.10-src/native
 ./configure --with-apr=/usr/local/apr --with-java-home=/usr/lib/jvm/java-8-oracle --with-ssl=yes --prefix=/opt/tomcat
  
-#### 16a  Install Shib IdP 3.2.1 with Jetty
+#### 16a  Install Shib IdP 3.2.1 and Jetty 
 
 ...
 root@test-cache:/opt/jetty-distribution-9.3.15.v20161220# cat webapps/idp.xml
@@ -183,6 +183,12 @@ Rebuilding /opt/shibboleth-idp/war/idp.war ...
 
 BUILD SUCCESSFUL
 Total time: 2 min
+
+#### 16b Configuring Jetty to serve the Shib 3.2.1 IdP webapp per https://wiki.shibboleth.net/confluence/display/IDP30/Jetty93 
+
+***You Are Here***
+
+
 
 ## Shibboleth IdP -- Active Directory Integration
 * See detailed instructions on the Shibboleth wiki, at https://wiki.shibboleth.net/confluence/display/IDP30/LDAPAuthnConfiguration 
