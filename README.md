@@ -276,6 +276,8 @@ Generic support for SQL and MongoDB will be available shortly. I18N support is o
   ```
   $ $IDP_HOME/bin/build.sh
   ```
+
+  
 ## Testing the IdP
 
 ## Contact Classlink about integration
