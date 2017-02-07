@@ -188,7 +188,7 @@ Total time: 2 min
 
 ## ***=====> You Are Here <=====***
 
-#### Configure IdP Context Descriptor
+#### 16b.1 Configure IdP Context Descriptor
 
 
 
