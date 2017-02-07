@@ -186,7 +186,7 @@ Total time: 2 min
 
 #### 16b Configuring Jetty to serve the Shib 3.2.1 IdP webapp per https://wiki.shibboleth.net/confluence/display/IDP30/Jetty93 
 
-## ***You Are Here***
+## ***=====> You Are Here <=====***
 
 #### Configure IdP Context Descriptor
 
