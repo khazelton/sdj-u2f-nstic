@@ -186,11 +186,19 @@ Total time: 2 min
 
 #### 16b Configuring Jetty to serve the Shib 3.2.1 IdP webapp per https://wiki.shibboleth.net/confluence/display/IDP30/Jetty93 
 
+#### 16b.1 Get SSL cert for Jetty from Letsencrypt per https://certbot.eff.org/docs/using.html#getting-certificates-and-choosing-plugins
+
 ## ***=====> You Are Here <=====***
 
-#### 16b.1 Configure IdP Context Descriptor
+#### 16b.2 Configure IdP Context Descriptor
 
 
 
 ## Shibboleth IdP -- Active Directory Integration
 * See detailed instructions on the Shibboleth wiki, at https://wiki.shibboleth.net/confluence/display/IDP30/LDAPAuthnConfiguration 
+
+## Shibboleth U2F installation and configuration
+
+## Testing the IdP
+
+## Contact Classlink about integration
